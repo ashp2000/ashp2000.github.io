@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="formvalidation.css">
+	<script type="text/javascript" src="myscript.js"></script>
+	
+	<script>
+
+var myVar = setInterval(myTimer, 5000);
+
+		function myTimer() {
+ 
+  document.getElementById("demo").style.backgroundColor = 'green';
+}
+
+	function changeView()
+	{
+		
+		document.getElementById("p1").style.color = 'red';		
+	}
+
+
+
+	</script>
+	
+	<title>form validation</title>
+</head>
+
+<body id="demo">
+<form name="f1">
+<div id="form">
+
+<h1 style="font-size: 50px;margin-left: 20px;color: red;text-align: center; "><i><b><u>Registration Form</u></b></i></h1>
+<p style="text-align: center;background-color: yellow;"><b>Hey! please fill this form to get <b><i style="color: red;">registered</i></b> in our company</p>
+<table>
+	<tr>
+		<td class="heading">Name:</td>
+		<td><input class="box" type="text" id="txtuserId" ></td>
+	</tr>
+	<tr>
+		<td class="heading">Age:</td>
+		<td><input class="box" type="text"  name="txtpassword" onblur="Password(document.f1.txtpassword)"></td>
+	</tr>
+	<tr>
+		<td class="heading">Address:</td>
+		<td><input class="box" type="text" id="User" name="aa" onblur="document.f1.aa"></td>
+	</tr>
+	<tr>
+		<td class="heading">Fvrt Sub :</td>
+		<td><input class="box" type="" id="txtaddress"></td>
+	</tr>
+	<tr>
+		<td class="heading">Fvrt movie:</td>
+		<td><input class="box" type="" id="txtaddress"></td>
+	</tr>
+	<tr>
+		<td class="heading">Fvrt singer:</td>
+		<td><input class="box" type="" id="txtzipcode" ></td>
+	</tr>
+	<tr>
+		<td class="heading">Sex:</td>
+	<td>
+		<input type="radio" name="gender" id="msex"><span>Male</span>
+		<input type="radio" name="gender" id="fsex"><span>Female</span>
+	</td>
+	</tr>
+	<tr>
+		<td class="heading">Language:</td>
+	<td>
+		<label>English</label><input type="checkbox" name="" checked>
+		<label>Hindi</label><input type="checkbox" name="">
+	</td>
+	</tr>
+	<tr>
+		<td style="font-size: 20px;">About:</td>
+		<td><textarea style="height: 200px;width: 400px;font-size: 20px;" type="" name=""></textarea></td>
+	</tr>
+	<tr>
+		<td colspan="2"><center><button onclick="fieldValidation()" style="height: 50px;width: 80px;">Submit</button></center></td>
+		
+	</tr>
+</table>
+</b>
+</p>
+</div>
+</form>
+
+<h1 id="p1" onclick="changeView()" >click on the element to change the view</h1>
+<div>
+	<h1  >paragraph 1</h1>
+</div>
+
+<br>
+
+<br>
+</body>
+</html>
+	
+

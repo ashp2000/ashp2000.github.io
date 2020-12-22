@@ -1,0 +1,27 @@
+body {
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+}
+
+#full {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+}
+#form{
+	height: 480pt;
+	width: 600px;
+	border-color: white;
+	background-color:#e6e6e6;
+	margin-left: 450px;
+	background-color: yellow;
+	border-radius: 5px;
+}
+.heading{
+	font-size: 20px;
+}
+.box{
+	height: 20px;
+	width: 200px;
+}
